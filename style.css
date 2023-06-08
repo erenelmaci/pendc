@@ -132,7 +132,6 @@
 }
 .discover-solutions-text {
   text-transform: uppercase;
-  width: 46.6rem;
   height: 5.8rem;
   font-size: 2rem;
   font-weight: 600;
@@ -163,14 +162,89 @@
   font-size: 1.3rem;
   width: 26.5rem;
 }
+#accordion {
+  width: 25.5rem;
+  margin-top: 0.7rem;
+}
 .accordion-hr {
   width: 25rem;
   border: 2px solid #e2dfdf;
+  margin-top: 0.4rem;
   height: 0;
 }
-.accordion-header{
+.accordion-header {
   width: 25rem;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5rem;
+  border-bottom: 4px solid #e2dfdf;
+  color: #363d4b;
+}
+.accordion-button > i {
+  font-size: 2rem;
+  margin-left: 11rem;
+}
+.accordion-button {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+.accordion-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  flex-direction: row;
+}
+.accordion-body > i {
+  color: #2d9bf0;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+.accordion-body > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.says-card {
+  width: 36.5rem;
+  height: 19.3rem;
+  border: 1px solid #e2dfdf;
+  border-radius: 53px;
+  margin-right: 5rem;
+}
+.says-card > p {
+  width: 33rem;
+  height: 10rem;
+  margin: 2rem;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  color: #363d4b;
+}
+.says-card > a {
+  width: 33rem;
+  height: 10rem;
+  margin: 2rem;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.says-card-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.corporate-need-text{
+  margin: 5rem;
+  text-align: left;
+  width: 35rem;
+  height: 12rem;
 }

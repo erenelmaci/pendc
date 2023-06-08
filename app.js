@@ -68,36 +68,51 @@ const accordionContainer = document.getElementById("accordion")
 
 accordionContainer.innerHTML = accordionMenu
   .map(
-    (e) => `<div class="accordion-item">
-<h2 class="accordion-header" id="heading${e.id}">
-  <button
-    class="accordion-button"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#collapse${e.id}"
-    aria-expanded="true"
-    aria-controls="collapse${e.id}"
-  >
-  ${e.title} <i class="fa-solid fa-arrow-down"></i>
-  </button>
-</h2>
-<div class="accordion-hr"></div>
-<div
-  id="collapse${e.id}"
-  class="accordion-collapse collapse show"
-  aria-labelledby="heading${e.id}"
-  data-bs-parent="#accordion"
->
-  <div class="accordion-body">
-    <i class="fa-solid fa-check"></i> ${e.contents[0]}
-  </div>
-  <div class="accordion-body">
-    <i class="fa-solid fa-check"></i> ${e.contents[1]}
-  </div>
-  <div class="accordion-body">
-    <i class="fa-solid fa-check"></i> ${e.contents[2]}
-  </div>
-</div>
-</div>`
+    (e) => `<div id="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header" id="heading${e.id}">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse${e.id}"
+          aria-expanded="false"
+          aria-controls="collapse${e.id}"
+        >
+        ${e.title}
+        </button>
+        <span
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse${e.id}"
+          aria-expanded="false"
+          aria-controls="collapse${e.id}"
+        >
+          <i class="fa-solid fa-arrow-down"></i>
+        </span>
+      </div>
+
+      <div
+        id="collapse${e.id}"
+        class="accordion-collapse collapse"
+        aria-labelledby="heading${e.id}"
+        data-bs-parent="#accordion"
+      >
+        <div class="accordion-body">
+          <i class="fa-solid fa-check"></i>
+          <p>${e.contents[0]}</p>
+        </div>
+        <div class="accordion-body">
+          <i class="fa-solid fa-check"></i>
+          <p>${e.contents[1]}</p>
+        </div>
+        <div class="accordion-body">
+          <i class="fa-solid fa-check"></i>
+          <p>${e.contents[2]}</p>
+        </div>
+      </div>
+    </div>
+  </div>`
   )
   .join("")
