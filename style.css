@@ -15,6 +15,9 @@ ul > li {
 }
 .header-link > a {
   color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
 }
 .header-link > a:hover {
   text-decoration: underline !important;
@@ -34,7 +37,9 @@ ul > li {
 }
 .main-text {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  /* justify-items: center; */
+  gap: 5rem;
   align-items: flex-start;
   margin-top: 6rem;
 }
@@ -82,6 +87,10 @@ ul > li {
 .tier-text {
   margin: 2rem 0;
   color: #363d4b;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
 }
 .get-info-button {
   width: 13rem;
@@ -109,7 +118,8 @@ ul > li {
 }
 .section-cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 6rem;
   align-items: center;
   flex-direction: row;
 }
@@ -151,22 +161,27 @@ ul > li {
 .orange-text {
   color: #fd7e0d;
 }
-.discover-solutions {
-  width: 50%;
+.discover-solutions-text {
+  width: 46.6rem;
+  height: 5.8rem;
 }
 .discover-solutions-landing {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 5rem;
+  justify-content: center;
   align-items: center;
+  margin: 5rem;
+  gap: 5rem;
 }
 .discover-solutions > button {
   margin-top: 2rem;
 }
 .discover-solutions > p {
-  font-size: 1.3rem;
-  width: 26.5rem;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 1px;
+  width: 528px;
 }
 #accordion {
   width: 25.5rem;
@@ -314,9 +329,13 @@ ul > li {
   letter-spacing: 2px;
   color: #2d9bf0;
 }
+.ideas-to-life {
+  display: flex;
+  justify-content: center;
+}
 .ideas-to-life > p {
   width: 746px;
-  margin: 4rem 0 4rem 0;
+  margin: 4rem 33rem 4rem 0;
   font-weight: 600;
   font-size: 35px;
   line-height: 45px;
@@ -324,13 +343,14 @@ ul > li {
 }
 .technical-support {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 13rem;
+  margin-bottom: 7rem;
 }
 .technical-support > p {
   text-align: left;
-  margin-top: 2.5rem;
-  width: 40%;
+  width: 250px;
   height: 423px;
   font-size: 22px;
   font-weight: 600;
@@ -346,6 +366,14 @@ ul > li {
   text-transform: uppercase;
   color: #363d4b;
   margin-top: 4rem;
+  padding-right: 3rem;
+}
+.popular-monht-year-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 39rem;
+  flex-direction: column;
 }
 .monthly-yearly {
   width: 36rem;
@@ -383,7 +411,7 @@ ul > li {
 }
 .package-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -475,6 +503,10 @@ ul > li {
   font-size: 45px;
   line-height: 45px;
   letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  padding-right: 50rem;
+  margin-top: 5rem;
 }
 .pendc-video {
   margin-top: 2rem;
@@ -483,7 +515,8 @@ ul > li {
 }
 .videos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 6rem;
   align-items: center;
   margin-bottom: 6rem;
 }
@@ -509,11 +542,15 @@ ul > li {
   letter-spacing: 4px;
   color: #363d4b;
   margin: 4rem 0 6rem 0;
+  display: flex;
+  justify-content: center;
+  padding-right: 25rem;
 }
 .sertificateds {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 8rem;
 }
 .sertificated-container {
   width: 18.75rem;
@@ -537,12 +574,22 @@ ul > li {
 }
 .references-partners-container {
   display: grid;
+  margin: 0 auto;
+  width: 75rem;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  justify-items: center;
 }
 
 .references-partners-container img {
   max-width: 100%;
   height: auto;
+}
+.sertificated-text {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 45px;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 50rem 5rem 0;
 }
