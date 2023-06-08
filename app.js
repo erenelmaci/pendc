@@ -64,6 +64,39 @@ const accordionMenu = [
   },
 ]
 
+const servicesCardData = [
+  {
+    id: 1,
+    icon: "fa-solid fa-user-large",
+    title: "7/24 Teknik Destek",
+  },
+  {
+    id: 2,
+    icon: "fa-solid fa-cloud",
+    title: "%99.9 Uptime",
+  },
+  {
+    id: 3,
+    icon: "fa-solid fa-eye",
+    title: "Servis İzleme",
+  },
+  {
+    id: 4,
+    icon: "fa-solid fa-shield-halved",
+    title: "Güvenlik",
+  },
+  {
+    id: 5,
+    icon: "fa-solid fa-server",
+    title: "Düzenli Yedekleme",
+  },
+  {
+    id: 6,
+    icon: "fa-solid fa-fire-extinguisher",
+    title: "Yangın Önleme",
+  },
+]
+
 const accordionContainer = document.getElementById("accordion")
 
 accordionContainer.innerHTML = accordionMenu
@@ -114,5 +147,16 @@ accordionContainer.innerHTML = accordionMenu
       </div>
     </div>
   </div>`
+  )
+  .join("")
+
+const servicesCard = document.getElementById("services-card")
+servicesCard.innerHTML = servicesCardData
+  .map(
+    (e) =>
+      `<div class="services-cards">
+       <i class="${e.icon}"></i>
+        <p>${e.title}</p>
+      </div>`
   )
   .join("")
